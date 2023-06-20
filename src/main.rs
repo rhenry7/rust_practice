@@ -1,4 +1,5 @@
 use std::io;
+use rand::Rng;
 
 fn two_sum(num1: i32, num2: i32) -> i32 {
     let sum = num1 + num2;
@@ -17,6 +18,8 @@ fn main() {
 
     // basically the same, but printLn writes to new line
 
+    let secret_number = rand::thread_rng().gen_range(1, 15);
+
     let mut input: String = String::new(); // variables are immutable by default 
     io::stdin()
         .read_line( &mut input)
@@ -30,8 +33,18 @@ fn main() {
 
     let message = "The sum is: ";
     let second_message = "The minus of the previous sum is";
+    let this_is_my_message = "test something something";
 
-    println!("{}", input);
+    println!("The secret number is: {}", secret_number);
+
+    if input == "add " {
+        println!("you chose add");
+    } else {
+        println!("you did not choose add");
+    };
+
+    println!("{}", this_is_my_message);
+    println!("{}", input.trim()); 
 
     println!("{} {}", message, sum);
 
