@@ -55,4 +55,10 @@ fn main() {
     //println!("Hello Cruel World!");
     println!("This is {0}. This is {1}", "Batman", "Robin");
 
+    // in string formatting, position arguments can be used inside `{}`
+    println!("{0} And now this is {1} and this is {0}", "WonderWoman", "SuperGirl");
+
+    // specific string patterns
+    println!("{subject}{verb}{object}", object="dans le parc ", verb="marche ", subject="le rapid lupin "); 
+
 }
