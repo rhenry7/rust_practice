@@ -59,6 +59,22 @@ fn main() {
     println!("{0} And now this is {1} and this is {0}", "WonderWoman", "SuperGirl");
 
     // specific string patterns
-    println!("{subject}{verb}{object}", object="dans le parc ", verb="marche ", subject="le rapid lupin "); 
+    println!("{subject}{verb}{object}", object="dans le parc ", verb="courir ", subject="le rapid lupin ");
+
+     println!("{number:0>width$}", number=1, width=50);
+
+    // throws an error println!("My name is {0}, {1} {0}", "Bond"); 
+    println!("My name is {0}, {1} {0}", "Bond", "James");
+
+    let people = "Jamaicans";
+     // will throw an error because you cannot use variables without a placeholder `{}` 
+     // println!(people);
+    println!("{}", people);
+    println!("{} people like to {}", people, "dance.");
+
+    // print errors
+    eprint!("Coding errors");
+    eprint!("being handled like this is cool");
+    
 
 }
