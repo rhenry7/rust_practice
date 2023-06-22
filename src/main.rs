@@ -18,7 +18,8 @@ fn main() {
 
     // basically the same, but printLn writes to new line
 
-    let secret_number = rand::thread_rng().gen_range(1, 15);
+    /*
+     let secret_number = rand::thread_rng().gen_range(1, 15);
 
     let mut input: String = String::new(); // variables are immutable by default 
     io::stdin()
@@ -49,4 +50,9 @@ fn main() {
     println!("{} {}", message, sum);
 
     println!("{} {}", second_message, minus)
+     */
+
+    //println!("Hello Cruel World!");
+    println!("This is {0}. This is {1}", "Batman", "Robin");
+
 }
