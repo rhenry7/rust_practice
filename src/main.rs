@@ -89,6 +89,34 @@ promote_love("Ramone");
 
     let (country, food) = ("Japan", "Sushi");
     println!("{} comes from {}", food, country);
+
+        //implicitly define an integer
+    let a = 21; 
+    let b = 1;
+    let c = 54;
+    let d = 343434;
+    //print the variable
+    println!("a: {}", a);
+    println!("b: {}", b);
+    println!("c: {}", c);
+    println!("d: {}", d);
+
+    let value: &str = "Rust Programming";
+println!("{}", value);
+
+
+// arrays 
+
+let fruits: [&str; 4] = ["apple", "banana", "pineapple", "pear"];
+// type, semi-colon, size
+let ages: [i32; 3] = [21, 22, 23];
+
+// consts must be caps, typed and cannot be mutated (will error )
+const POWER_LEVEL: u32 = 9000;
+
+println!("HIS POWER LEVEL IS OVER {}", POWER_LEVEL);
+
+
     
 
 }
