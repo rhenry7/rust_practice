@@ -109,8 +109,11 @@ println!("{}", value);
 
 let fruits: [&str; 4] = ["apple", "banana", "pineapple", "pear"];
 // type, semi-colon, size
-let ages: [i32; 3] = [21, 22, 23];
+let mut ages: [i32; 3] = [21, 22, 23];
 
+println!("I was {}", ages[2]);
+ages[2] = 25;
+println!("But then I was {}", ages[2]);
 // consts must be caps, typed and cannot be mutated (will error )
 const POWER_LEVEL: u32 = 9000;
 
