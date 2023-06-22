@@ -7,12 +7,18 @@ fn two_sum(num1: i32, num2: i32) -> i32 {
 }
 
 fn two_minus(num1: i32, num2: i32) -> i32 {
-    num1 - num2
+    num1 - num2 
+}
+
+fn promote_love(name: &str) -> &str{
+   println!("{0} love's everyone", name);
+   return "declaration";
 }
 
 fn main() {
     // comments work the same!
 
+promote_love("Ramone");
     // a macro are like built in methods? I guess..
     // write to console with "print" or "printLn"
 
@@ -80,6 +86,9 @@ fn main() {
     println!("{}", xman); // print new line 
     xman = "Night Crawler";
     println!("{}", xman); // print new line 
+
+    let (country, food) = ("Japan", "Sushi");
+    println!("{} comes from {}", food, country);
     
 
 }
