@@ -73,8 +73,13 @@ fn main() {
     println!("{} people like to {}", people, "dance.");
 
     // print errors
-    eprint!("Coding errors");
-    eprint!("being handled like this is cool");
+    eprint!("Coding errors"); // print one line
+    eprintln!("being handled like this is cool"); // print with new line 
+
+    let mut xman = "Wolverine";
+    println!("{}", xman); // print new line 
+    xman = "Night Crawler";
+    println!("{}", xman); // print new line 
     
 
 }
