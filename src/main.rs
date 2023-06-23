@@ -15,6 +15,28 @@ fn promote_love(name: &str) -> &str{
    return "declaration";
 }
 
+fn useTuple() {
+    //define a tuple
+    let person_data = ("Alex", 48, "35kg", "6ft");
+    // define a tuple with type annotated
+    let person_data : (&str, i32, &str, &str) = ("Alex", 48, "35kg", "6ft");
+    
+    let planet_data : (&str, i32, char, &str) = ("Gorgon Prime", 900_000, 'c', "Pegasus Galaxy");
+    // wont work -> println!("{}", planet_data);
+    println!("");
+    println!("{:?}", planet_data); // planet_data;
+    // you have to use the debug trait for tuples; 
+
+    // get individual values out of tuple
+    let (w ,x, y, z) = planet_data;
+
+    //print values
+    println!("Name : {}", w);
+    println!("Age : {}", x);
+    println!("Class : {}", y);
+    println!("Location : {}", z);
+}
+
 fn main() {
     // comments work the same!
 
@@ -109,6 +131,7 @@ println!("{}", value);
 
 let fruits: [&str; 4] = ["apple", "banana", "pineapple", "pear"];
 // type, semi-colon, size
+// use mut to make array mutable 
 let mut ages: [i32; 3] = [21, 22, 23];
 
 println!("I was {}", ages[2]);
@@ -118,6 +141,11 @@ println!("But then I was {}", ages[2]);
 const POWER_LEVEL: u32 = 9000;
 
 println!("HIS POWER LEVEL IS OVER {}", POWER_LEVEL);
+
+useTuple();
+
+ let arr: [i32; 6] = [ 0,2,4,6,8,10];
+ println!("{:?}", arr);
 
 
     
