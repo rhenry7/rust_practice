@@ -37,6 +37,15 @@ fn useTuple() {
     println!("Location : {}", z);
 }
 
+fn getNames(){
+   let mut line = String::new();
+   println!("Enter your name :");
+   let b1 = std::io::stdin().read_line(&mut line).unwrap();
+   println!("Hello , {}", line);
+   println!("no of bytes read , {}", b1);
+}
+
+
 fn main() {
     // comments work the same!
 
@@ -146,6 +155,9 @@ useTuple();
 
  let arr: [i32; 6] = [ 0,2,4,6,8,10];
  println!("{:?}", arr);
+
+
+ getNames();
 
 
     
